@@ -1,0 +1,41 @@
+
+<html>
+<head>
+  <title> Typing Test </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+  <link rel='stylesheet' href='style.css'></link>
+</head>
+<body class='text-center'>
+  <div class='container'>
+    <h2 id='title'>Typing Test</h2>
+      <p id='words'>(quote)</p>
+      <p id='to-start'><em>Click below to start the test</em></p>
+      <input id='input-text' placeholder='type here' oninput='processInput()' onfocus='startGame()' autocomplete='off'>
+  <div class='header'>
+  <div class='well info' id='wpm'>
+    <div class='info-text' id='wpm-text'>WPM</div>
+    <div class='info-num' id='wpm-number'>0</div>
+  </div>
+  <div class='well info' id='cpm'>
+    <div class='info-text' id='cpm-text'>CPM</div>
+    <div class='info-num' id='cpm-number'>0</div>
+  </div>
+  <div class='well info' id='errors'>
+    <div class='info-text' id='err-text'>Errors</div>
+    <div class='info-num' id='err-num'>0</div>
+  </div >
+  <div class='well info' id=time>
+    <div class='info-text' id='time-text'>Time</div>
+    <div class='info-num' id='seconds'>60</div>
+  </div>
+  <div class='well info' id='accuracy'>
+    <div class='info-text' id='acc-text'>Accuracy</div>
+    <div class='info-num' id='acc-num'>100</div>
+  </div>
+  </div>
+  <button id='restart-btn' onclick='resetValue()'>RESTART</button>
+ </div>
+ <script src='script.js'></script>
+</body>
+
+</html>
